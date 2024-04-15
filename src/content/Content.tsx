@@ -1,7 +1,7 @@
 function Content() {
   return (
-    <main>
-      <h1>Eren Yalçın</h1>
+    <main style={{height: "10000px"}}>
+      <div>Eren Yalçın</div>
     </main>
   );
 }

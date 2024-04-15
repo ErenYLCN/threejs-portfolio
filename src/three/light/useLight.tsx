@@ -8,6 +8,8 @@ function useLight() {
   ambientLight.position.set(10, 10, 10);
 
   const pointLight = new THREE.PointLight(0xffffff, 100, 1000);
+  pointLight.position.set(-2, -10, -2);
+  pointLight.rotation.set(-1.12, 0.15, 0.27);
 
   const pointLightHelper = new THREE.PointLightHelper(pointLight);
   const gridHelper = new THREE.GridHelper(200, 50);
@@ -15,8 +17,8 @@ function useLight() {
   useEffect(() => {
     scene.add(ambientLight);
     scene.add(pointLight);
-    scene.add(pointLightHelper);
-    scene.add(gridHelper);
+    /* scene.add(pointLightHelper); */
+    /* scene.add(gridHelper); */
   });
 
   return null;
