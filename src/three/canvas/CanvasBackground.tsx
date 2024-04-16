@@ -5,6 +5,7 @@ import { useThreeContext } from "../ThreeContext";
 import useStars from "../stars/useStars";
 import useCloud from "../cloud/useCloud";
 import useRain from "../rain/useRain";
+import useMoon from "../moon/useMoon";
 
 function CanvasBackground() {
   const { scene, renderer } = useThreeContext();
@@ -14,6 +15,7 @@ function CanvasBackground() {
   useCloud();
   useLight();
   useRain();
+  useMoon();
 
   useEffect(() => {
     const container = containerRef.current;

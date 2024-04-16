@@ -40,7 +40,7 @@ function useCameraController() {
 
       //make pendulum effect on camera z rotation
       camera.rotation.z = Math.sin(x) * 0.04;
-      x += 0.01;
+      x += 0.004;
     }
 
     moveCamera();
